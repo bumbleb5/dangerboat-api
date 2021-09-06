@@ -1,5 +1,5 @@
 // FIRST STEP - DEFINE MODEL
-export class Plant {
+export class PlantModel {
     // This longhand way is not necessary when using the public declaration in front of the properties
     // plantId: string;
     // commonName: string;

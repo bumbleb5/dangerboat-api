@@ -1,11 +1,16 @@
 import { Module } from '@nestjs/common';
+import { MongooseModule } from '@nestjs/mongoose';
 
 import { PlantsController } from './plants.controller';
 import { PlantsService } from './plants.service';
+import { PlantsRepository } from './plants.repository';
+import { Plant, PlantSchema } from './schemas/plants.schema';
 
 @Module({
-    imports: [],
+    imports: [
+        MongooseModule.forFeature([{ name: Plant.name, schema: PlantSchema }]),
+    ],
     controllers: [PlantsController],
-    providers: [PlantsService],
+    providers: [PlantsService, PlantsRepository],
 })
 export class PlantsModule {}
