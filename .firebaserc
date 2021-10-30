@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "plant-app-api-16173",
+    "production": "plant-app-80e16"
+  },
+  "targets": {}
+}

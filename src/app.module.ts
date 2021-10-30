@@ -15,7 +15,7 @@ require('dotenv').config();
         EventsModule,
         ProductsModule,
         MongooseModule.forRoot(
-            `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@${process.env.CLUSTER}.mxxgn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
+            `mongodb+srv://${process.env.DEMO_USER}:${process.env.DEMO_PASSWORD}@${process.env.CLUSTER}.mxxgn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
         ),
     ],
     controllers: [AppController],
